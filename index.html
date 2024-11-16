@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1, h2 {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 80px;
+  }
+  h2 {
+    color: #D2B48C;
+  }
+  h1 {
+    color: #D2B48C;
+    font-size: 36px;
+    margin-bottom: 0px;
+  }
+  p {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 80px;
+  }
+  #about {
+    margin-bottom: 30px;
+  }
+
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap onto the next line */
+    gap: 10px;  /* Space between the images */
+    justify-content: center; /* Center images horizontally */
+  }
+
+  .gallery-grid a {
+    display: inline-block;
+  }
+
+  .gallery-grid img {
+    width: 200px; /* Set the width to 120px */
+    height: 200px; /* Set the height to 120px to keep images square */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .gallery-grid img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+</style>
+</head>
+<body>
+  <section id="about">
+    <h1>Catherine Elizabeth Higgins</h1>
+    <p>A maritime painter located in Fredericton, New Brunswick. </p>
+    <p>For inquiriers email: catherine.higgins.e@gmail.com</p>
+  </section>
+  
+  <section id="gallery">
+    <h2>Work from 2023-2024</h2>
+    <div class="gallery-grid">
+      <a href="artgallery/chamcook.jpg" target="_blank"><img src="artgallery/chamcook.jpg" alt="Image 1"></a>
+      <a href="artgallery/woodstockroad.jpg" target="_blank"><img src="artgallery/woodstockroad.jpg" alt="Image 1"></a>
+      <a href="artgallery/sj.jpg" target="_blank"><img src="artgallery/sj.jpg" alt="Image 1"></a>
+      <a href="artgallery/frankie.jpg" target="_blank"><img src="artgallery/frankie.jpg" alt="Image 1"></a>
+      <a href="artgallery/aline_henriette.jpg" target="_blank"><img src="artgallery/aline_henriette.jpg" alt="Image 1"></a>
+      <a href="artgallery/aline_henriettev2.jpg" target="_blank"><img src="artgallery/aline_henriettev2.jpg" alt="Image 1"></a>
+      <a href="artgallery/grandmother.jpg" target="_blank"><img src="artgallery/grandmother.jpg" alt="Image 1"></a>
+      <a href="artgallery/mother.jpg" target="_blank"><img src="artgallery/mother.jpg" alt="Image 1"></a>
+      <a href="artgallery/mother.jpg" target="_blank"><img src="artgallery/janet.jpg" alt="Image 1"></a>
+      <!-- Add more as needed -->
+    </div>
+  </section>
+</body>
+</html>
